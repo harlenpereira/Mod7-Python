@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <input type="Submit" name="submit" value="Submit"/>
+
+    </form>
+     {% if submitbutton == "Submit" %}
+     <h1>Conteudo estudado {{ conteudo }}</h1>
+     <h1>Observacoes {{ obs }}</h1>
+     {% endif %}
+</body>
